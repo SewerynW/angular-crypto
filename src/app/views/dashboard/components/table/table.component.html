@@ -1,0 +1,23 @@
+<table>
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>Price</th>
+            <th>24h</th>
+            <th>Volume</th>
+            <th>Market Cap</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let row of coinList">
+            <td>
+                <img [src]="row.image" />
+            </td>
+            <td>{{ row.id }}</td>
+        </tr>
+
+    </tbody>
+</table>
